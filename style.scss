@@ -882,7 +882,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding-top: 10vh;
-    height: 50vh;
+    height: 55vh;
     background-image: url(./images/header1.jpg);
     background-size: cover;
     background-position: center;
@@ -923,6 +923,16 @@ footer {
   z-index: 100;
   cursor: pointer;
   border: 2px solid #fff;
+}
+
+.slider-dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 5vh;
+  width: 41%;
 }
 
 .about-me-container {
@@ -981,7 +991,7 @@ footer {
   gap: 0;
 }
 footer {
-  height: 73vh;
+  height: 80vh;
 }
 
 }
