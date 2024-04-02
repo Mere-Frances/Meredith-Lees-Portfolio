@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="./style.css">
+    <title>Meredith Lees</title>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="nav-container">
+        <div class="navbar">
+            <div class="navbar__logo-container">
+                <a href="./index.html">
+                    <img class="navbar__logo" src="./images/logo.png" alt="Loosies nav logo image">
+                </a>
+                <p>UI/UX Designer & <br>Graphic Designer</p>
+            </div>
+            <!-- NAV LINKS -->
+            <div class="navbar__link-container" id="navigationItems">
+                <a class="navbar__link-item" href="./index.html#home">Home</a>
+                <a class="navbar__link-item" href="./index.html#aboutMe">About</a>
+                <a class="navbar__link-item" href="./index.html#projects">Projects</a>
+                <a class="navbar__link-item" href="./index.html#icon-grid">Skills</a>
+            </div>
+
+            <!-- Hamburger Icons -->
+            <div class="hamburger">
+                <span id="openHam">&#9776;</span>
+                <span id="closeHam">&#x2716;</span>
+            </div>
+        </div>
+    </nav>
+    <!-- NAV END -->
+
+
+    <!-- home header -->
+    <div class="home-header" id="home">
+        <div class="header-title">
+            <p>Meredith Lees</p>
+            <h1>Haere mai Welcome</h1>
+        </div>
+        <div class="scrolldown">
+            <div class="chevrons">
+                <div class="chevrondown"></div>
+                <div class="chevrondown"></div>
+            </div>
+        </div>
+    </div>
+    <!-- home header end -->
+
+    <!-- about me section -->
+    <div class="about-me-container" id="aboutMe">
+        <div class="about-me-grid">
+            <img class="about-me-item1" alt="about me image" src="./images/aboutme1.jpg">
+            <img class="about-me-item2" alt="about me image" src="./images/aboutme2.jpg">
+            <img class="about-me-item3" alt="about me image" src="./images/aboutme3.jpg">
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="3000" class="about-me-content">
+            <h2>My Story</h2>
+            <p class="sub-title">Kei te rangatira, tēnā koe</p>
+            <div class="text-container">
+                <!-- <span class="text-border"></span> -->
+                <p class="main-text">My name is Meredith, and I am a creative UI/UX designer, developer and graphic
+                    designer. I was born and
+                    rasied here in Aotearoa and spent two years of my life persuing my design career in Te Whanganui a
+                    Tara,
+                    Wellington.<br><br>
+
+                    Originally, I spent the first two years of my life after high school at the University of Otago,
+                    pursuing a Bachelor of Arts while trying to discover my passions and find my place in the world. It
+                    was
+                    during these two years that I came to understand my true calling was in the design industry. It
+                    wasn't
+                    until being encouraged by family and friends to follow my heart and passions that I was able to find
+                    the
+                    courage to change direction in my career and take a leap of faith.<br><br>
+
+                    I started my design career as a black belt beginner and have come a long way in terms of developing
+                    my
+                    passions, skills, and understanding of the design world, one line of code at a time. I have a
+                    natural
+                    curiosity for web development that has turned into a personal passion. I especially love the
+                    excitement,
+                    imagination, and creativity that comes with bringing ideas to life.
+                </p>
+
+            </div>
+            <a href=""></a>
+        </div>
+    </div>
+    <!-- aboiut me section end -->
+
+
+    <!-- projects section -->
+    <div class="projects-container" id="projects">
+
+        <div class="projects-header">
+            <div class="projects-title">
+                <h2>My Projects</h2>
+                <p>Discover a range of graphic and web designs</p>
+            </div>
+            <div class="projects-arrows">
+                <button class="arrow-btn arrow-btn-prev" id="prevButton" tabindex="0">
+                    <a href="./index.html"></a>
+                    <svg viewBox="0 0 256 512">
+                        <path
+                            d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+                    </svg>
+                </button>
+                <button class="arrow-btn arrow-btn-next" id="nextButton" tabindex="0">
+                    <svg viewBox="0 0 256 512">
+                        <path
+                            d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+
+        <div class='cards-wrapper'>
+            <div class='cards'>
+                <button class='cupcake-preview card card1 active' tabindex="-1">
+                    <a class="cupcake-open" href="./index.html"></a>
+                </button>
+
+                <button class='witchery-preview card card2 active' tabindex="-1">
+                    <a class="cupcake-open" href="./index.html"></a>
+                </button>
+
+                <button class='bigbird-preview card card3 active' tabindex="-1">
+                    <a class="cupcake-open" href="./index.html"></a>
+                </button>
+
+                <button class='loosies-preview card card4 active' tabindex="-1">
+                    <a class="cupcake-open" href="./index.html"></a>
+                </button>
+
+                <button class='amys-preview card card5 active' tabindex="-1">
+                    <a class="cupcake-open" href="./index.html"></a>
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="slider-dots">
+            <div class="slider-dot dot"></div>
+            <div class="slider-dot dot"></div>
+            <div class="slider-dot dot active"></div>
+            <div class="slider-dot dot"></div>
+            <div class="slider-dot dot"></div>
+        </div>
+        <a class="contact-email" href="">
+            <button class="email-btn">
+                <span>See All</span>
+            </button>
+        </a>
+    </div>
+    <!-- projects section end -->
+
+
+    <!-- skills -->
+    <div class="container skills-container px-4 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom">My Skills</h2>
+
+        <div data-aos="fade-up" data-aos-duration="3000"
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg34 g-3 py-5">
+
+            <!-- Skill 1 JS-->
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-boy-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-brands fa-js icon-preview"></i>
+                </div>
+                <div class="skills-content">
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">JavaScript</h3>
+                    <p class="fw-light">Adds interactivity, enabling dynamic features and functionality on web pages.</p>
+                </div>
+            </div>
+
+            <!-- Skill 2 HTML -->
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-boy-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-brands fa-html5 icon-preview"></i>
+                </div>
+                <div class="skills-content">
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">HTML</h3>
+                    <p class="fw-light">Structures web content, essential for creating the backbone of websites.</p>
+                </div>
+            </div>
+
+            <!-- Skill 3 CSS-->
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-boy-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-brands fa-css3-alt icon-preview"></i>
+                </div>
+                <div class="skills-content">
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">CSS</h3>
+                    <p class="fw-light">Styles HTML elements, enhancing visual appeal and layout of web pages.</p>
+                </div>
+            </div>
+
+            <!-- BOOTSTRAP -->
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-boy-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-brands fa-bootstrap icon-preview"></i>
+                </div>
+                <div class="skills-content">
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Bootstrap</h3>
+                    <p class="fw-light">Simplifies responsive web design, providing ready-made components for rapid development.</p>
+                </div>
+            </div>
+
+            <!-- SCSS -->
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-boy-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-brands fa-sass icon-preview"></i>
+                </div>
+                <div class="skills-content">
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SCSS</h3>
+                    <p class="fw-light">Extends CSS capabilities, facilitating efficient and modular styling of web projects.</p>
+                </div>
+            </div>
+
+            <!-- REACT -->
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-boy-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-brands fa-react icon-preview"></i> </div>
+                <div class="skills-content">
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">React</h3>
+                    <p class="fw-light">Builds interactive user interfaces, offering reusable components for scalable web applications.</p>
+                </div>
+            </div>
+
+            <!-- FIGMA -->
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-boy-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-brands fa-figma icon-preview"></i> </div>
+                <div class="skills-content">
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Figma</h3>
+                    <p class="fw-light">Designs digital assets collaboratively, streamlining UI/UX creation and iteration processes.</p>
+                </div>
+            </div>
+
+            <!-- GITHUB -->
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-boy-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-brands fa-github icon-preview"></i>
+                </div>
+                <div class="skills-content">
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Github</h3>
+                    <p class="fw-light">Manages version control, enabling collaboration and tracking changes in software development projects.</p>
+                </div>
+            </div>
+
+            <!-- WORDPRESS -->
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-boy-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-brands fa-wordpress icon-preview"></i>
+                </div>
+                <div class="skills-content">
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Wordpress</h3>
+                    <p class="fw-light">Powers websites, facilitating easy content management and customization for diverse online needs.</p>
+                </div>
+            </div>
+        </div>
+        <!-- contact link -->
+        <div class="contact-me">
+            <div class="contact-text">
+                <h3>Reach out</h3>
+                <p>Have a question? send me a message</p>
+            </div>
+            <div class="contact-area">
+                <a class="contact-email" href="mailto:meredithflss@gmail.com?">
+                    <button class="email-btn">
+                        <span>Email me</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!-- contact link end -->
+    </div>
+    <!-- skills section end -->
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="./index.html#home">
+                    <img class="footer--logo" src="./images/footerlogo.png" alt="Loosies nav logo image">
+                </a>
+                <a class="contact-email" href="mailto:meredithflss@gmail.com?"></a>
+                <p>Wellington, New Zealand</p>
+                <div class="footer-icons">
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-codepen"></i></a>
+                    <a href=""><i class="fa-brands fa-figma"></i></a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="./index.html#home">Home</a>
+                    <a href="./index.html#about">About</a>
+                    <a href="./index.html#projects">Projects</a>
+                    <a href="./index.html#skills">Skills</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Copyright</a>
+                    <a href="">Usage</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/40be05a600.js" crossorigin="anonymous"></script>
+
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- carousel script -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+
+    <!-- custom script -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
