@@ -876,15 +876,75 @@ footer {
 
 }
 
-@media screen and (max-width: 375px) {
-  .about-me-container {
+@media screen and (max-width: 380px), (max-height: 760px) {
+  .home-header {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    height: 175vh;
-    background-image: url(./images/header2.jpg);
-    padding: 3%;
+    padding-top: 10vh;
+    height: 50vh;
+    background-image: url(./images/header1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.about-me-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 175vh;
+  background-image: url(./images/header2.jpg);
+  padding: 3%;
+  position: relative;
+}
+.about-me-container .about-me-grid {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 0;
+  scale: .5;
+}
+.about-me-item3 {
+  transform: scale(0.9);
+}
+.about-me-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 197vh;
+  background-image: url(./images/header2.jpg);
+  padding: 3%;
+  position: relative;
+}
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 85vh;
+  width: 100%;
+  background-color: #394C66;
+}
+.cards-wrapper {
+  width: 100%;
+  height: 50%;
+  max-width: 90%;
+  overflow-x: hidden;
+  position: relative;
+}
+.contact-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 26vh;
+  gap: 0;
+}
+footer {
+  height: 73vh;
 }
 
 }
