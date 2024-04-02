@@ -775,6 +775,43 @@ footer .fa-brands {
     background-size: cover;
     background-position: center;
   }
+  .home-header .header-title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .scrolldown {
+    color: #000;
+    --color: black;
+    --sizeX: 30px;
+    --sizeY: 50px;
+    position: relative;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin-left: var(sizeX/2);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    position: absolute;
+    right: 0;
+    left: 85%;
+    top: 45vh;
+    margin-right: 5rem;
+    scale: 0.5;
+  }
+  .projects-container .projects-header .projects-arrows .arrow-btn {
+    width: 37px;
+    height: 102px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1882352941);
+    transform: translateY(-50%);
+    z-index: 100;
+    cursor: pointer;
+    border: 2px solid #fff;
+  }
   .about-me-container {
     display: flex;
     align-items: center;
