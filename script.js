@@ -1,3 +1,5 @@
+alert("Disclaimer\nThis site is currently under construction\nPlease view the temporary files below");
+
 AOS.init();
 
 let openHam = document.getElementById("openHam")
@@ -144,3 +146,30 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCarousel(currentIndex);
   });
 });
+
+function checkCurrentView() {
+  let navElems = document.getElementsByClassName("navbar__link-item");
+  for (i in navElems) {
+    if (navElems[i].id) {
+      var name = navElems[i].id.replace(/Nav/g, "");
+      if (isVisible(name)) {
+        navElems[i].setAttribute("style", "font-weight: 800; text-decoration: underline;");
+      } else {
+        navElems[i].setAttribute("style", "background: none;");
+      }
+    }
+  }
+}
+
+
+function isVisible(element){
+  element = document.getElementById(element);
+  const rect = element.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  ); 
+
+}

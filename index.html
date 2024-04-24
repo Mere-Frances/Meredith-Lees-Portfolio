@@ -13,7 +13,7 @@
     <title>Meredith Lees</title>
 </head>
 
-<body>
+<body onscroll="checkCurrentView()">
 
     <!-- NAV -->
     <nav class="nav-container">
@@ -26,10 +26,10 @@
             </div>
             <!-- NAV LINKS -->
             <div class="navbar__link-container" id="navigationItems">
-                <a class="navbar__link-item" href="./index.html#home">Home</a>
-                <a class="navbar__link-item" href="./index.html#aboutMe">About</a>
-                <a class="navbar__link-item" href="./index.html#projects">Projects</a>
-                <a class="navbar__link-item" href="./index.html#icon-grid">Skills</a>
+                <a class="navbar__link-item" href="./index.html#home" id="homeNav">Home</a>
+                <a class="navbar__link-item" href="./index.html#aboutMe" id="aboutMeNav">About</a>
+                <a class="navbar__link-item" href="./index.html#projects" id="projectsNav">Projects</a>
+                <a class="navbar__link-item" href="./index.html#icon-grid" id="skillsNav">Skills</a>
             </div>
 
             <!-- Hamburger Icons -->
@@ -47,6 +47,18 @@
         <div class="header-title">
             <p>Meredith Lees</p>
             <h1>Haere mai Welcome</h1>
+            <div class="home-pdf">
+                <a class="contact-email" href="https://acrobat.adobe.com/id/urn:aaid:sc:ap:77eac725-6828-4001-911d-5bc2a680673c">
+                    <button class="email-btn">
+                        <span>Resume</span>
+                    </button>
+                </a>
+                <a class="contact-email" href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:939b25df-5606-437d-b21a-e08a6d0c9ffb">
+                    <button class="email-btn">
+                        <span>Projects</span>
+                    </button>
+                </a>
+            </div>
         </div>
         <div class="scrolldown">
             <div class="chevrons">
@@ -170,7 +182,7 @@
 
 
     <!-- skills -->
-    <div class="container skills-container px-4 py-5" id="icon-grid">
+    <div class="container skills-container px-4 py-5" id="skills">
         <h2 class="pb-2 border-bottom">My Skills</h2>
 
         <div data-aos="fade-up" data-aos-duration="3000"
