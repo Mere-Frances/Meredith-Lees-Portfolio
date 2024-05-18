@@ -162,14 +162,14 @@ function checkCurrentView() {
 }
 
 
-function isVisible(element){
-  element = document.getElementById(element);
-  const rect = element.getBoundingClientRect();
-  return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  ); 
 
+
+const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
 }
+
+document.addEventListener('click',activate,false);
