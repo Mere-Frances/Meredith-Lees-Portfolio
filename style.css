@@ -357,10 +357,10 @@ main {
   left: 70%;
 }
 .item:nth-child(4) {
-  left: calc(65% + 250px);
+  left: calc(67% + 250px);
 }
 .item:nth-child(5) {
-  left: calc(60% + 500px);
+  left: calc(64% + 500px);
 }
 .item:nth-child(6) {
   left: calc(60% + 660px);
