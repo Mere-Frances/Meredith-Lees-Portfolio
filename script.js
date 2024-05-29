@@ -1,6 +1,3 @@
-import { injectSpeedInsights } from '@vercel/speed-insights';
- 
-injectSpeedInsights();
 alert("Disclaimer\nThis site is currently under construction\nPlease view the temporary files below");
 
 AOS.init();
